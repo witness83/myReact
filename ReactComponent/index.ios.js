@@ -102,7 +102,7 @@ var  SimleView = React.createClass({
             name: 'MineView ',
             title: ',,,',
             //            component: ForNetWork
-            component:AwesomeProject
+            component:ForNetWork
         });
         
     },
