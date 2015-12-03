@@ -11,6 +11,8 @@ var ForNetWork = require('./fornetwork');
 
 var AwesomeProject = require('./example');
 
+var WithAnimation = require('./withAnimations');
+
 
 var {
     Text,
@@ -101,7 +103,7 @@ var  SimleView = React.createClass({
         this.props.navigator.push({
             name: 'MineView ',
             title: ',,,',
-            //            component: ForNetWork
+            // component: ForNetWork
             component:ForNetWork
         });
         
@@ -135,7 +137,7 @@ var  SimleView = React.createClass({
         
         this.props.navigator.push({
             name:'MyView',
-            component:MyView,
+            component:WithAnimation,
             title: 'MyView title'
         });
         

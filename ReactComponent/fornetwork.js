@@ -29,7 +29,8 @@ var ForNetWork = React.createClass({
     },
 
     fetchData:function(){
-        fetch('https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json') // http://211.151.0.150:80/buses/bus_lines_page or http://www.baidu.com
+        fetch('https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json') // http://211.151.0.150:80/buses/bus_lines_page or http://www.baidu.com or http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.jso
+//        fetch('http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.jso')
             .then((response)=>{console.log(response); return response;})
             .then((response)=>{
                 return response.json();
@@ -84,7 +85,6 @@ var ForNetWork = React.createClass({
                 <Text style = {styles.title}>
                 {rowData.title}
                 </Text>
-
                 </View>
                 </View>
         );

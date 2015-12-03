@@ -3,6 +3,8 @@
 var React = require('react-native');
 
 var {
+    Animated,
+    Easing,
     AppRegistry,
     StyleSheet,
     Text,
@@ -42,15 +44,26 @@ var MyViewWithOutNav = React.createClass({
 var MyView = React.createClass({
     render: function(){
         console.log('pass props is '+this.props.lala);
-       
+        
 
         console.log('My View render triggered');
         return(
                 <View style={styles.container} >
                 <Text style={styles.welcome} > Hello there, welcome to My View</Text>
-                <Text style={styles.welcome} > Hello there, welcome to My View</Text>
-                <Text style={styles.welcome} onPress={()=>{console.log('pressed');}}> Hello there, welcome to My View</Text>
+                <Text style={styles.welcome} >stop...</Text>
+                <Text style={styles.welcome} onPress={()=>{this._textPress()}}> Hello there, welcome to My View</Text>
                 </View>);
+    },
+
+    _textPress:function(){
+        console.log('text press');
+        // var timing = Animated.timing;
+        // Animated.sequence([
+        //     timing(opacity, {
+        //         toValue: 0,
+        //         easing: Easing.linear,
+        //     })
+        // ]).start();
     }
 });
 
@@ -71,7 +84,7 @@ var TextSimple = React.createClass({
                 <Text>this is bbbbb</Text>
                 <Text>this is bbbbb</Text>
 
-                </View>
+            </View>
         );
     }
 });
@@ -95,6 +108,6 @@ var styles = React.StyleSheet.create({
 //module.exports = TextSimple;
 module.exports = MyView;
 
-// React.AppRegistry.registerComponent('MineView', () => MineView);
+// Recat.AppRegistry.registerComponent('MineView', () => MineView);
 // React.AppRegistry.registerComponent('MyView', () => MyView);
 // React.AppRegistry.registerComponent('TextSimple', () => TextSimple);
