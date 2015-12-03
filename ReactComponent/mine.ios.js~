@@ -1,0 +1,18 @@
+'use strict'
+
+
+var MineView = new Class({
+    initialize: function() {
+        
+    },
+
+    render:function(){
+        console.log("MineView rendered");
+        return (
+            
+        )
+    }
+});
+
+
+React.AppRegistry.registerComponent('MineView', () => MineView);

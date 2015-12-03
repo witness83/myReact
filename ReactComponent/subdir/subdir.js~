@@ -1,0 +1,65 @@
+'use strict'
+
+var React = require('react-native');
+
+var {
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View,
+} = React;
+
+var MineView = React.createClass({
+
+    render:function(){
+        console.log('minevie render');
+        return (
+                <Text>this is mine view</Text>
+        )
+    }
+});
+
+
+var MyView = React.createClass({
+    render: function(){
+        console.log('My View render triggered');
+        return (
+                <View style={styles.container}>
+                <Text style={styles.welcome}>
+                Hello there, welcome to My View
+            </Text>
+                </View>
+        );
+    }
+});
+
+
+var TextSimple = React.createClass({
+    render:function(){
+        console.log('in simple with text view  ...');
+        return(
+                <View style={styles.container} >
+                <Text>this is lalal</Text>
+                <Text>this is lalal</Text>
+                <Text>this is lalal</Text>
+                <Text>this is lalal</Text>
+                <Text>this is lalal</Text>
+                </View>
+        );
+    }
+});
+
+var styles = React.StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'orange'
+    },
+});
+
+
+module.exports = MineView;
+module.exports = TextSimple;
+
+React.AppRegistry.registerComponent('MineView', () => MineView);
+React.AppRegistry.registerComponent('MyView', () => MyView);
+React.AppRegistry.registerComponent('TextSimple', () => TextSimple);
