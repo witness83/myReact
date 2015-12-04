@@ -94,8 +94,15 @@ class FadeInView extends React.Component {
     constructor(props) {
         super(props);
         this.isHidden = 0;
+        var fadeAnim = new Animated.Value(this.isHidden); // init opacity 0
+        fadeAnim.addListener(()=>{
+            
+            // var value = this.isHidden==0?1:0;
+            // this.isHidden = value;
+            console.log('call listener... finished value is :'+this.state.fadeAnim);
+        });
         this.state = {
-            fadeAnim: new Animated.Value(this.isHidden) // init opacity 0
+            fadeAnim: fadeAnim
         };
 
     }
@@ -117,14 +124,14 @@ class FadeInView extends React.Component {
     }
 
     _fading(){
-        console.log('this.state.fadeAnim :'+this.state.fadeAnim.value);
+
         var value = this.isHidden==0?1:0;
         
         Animated.timing(          // Uses easing functions
             this.state.fadeAnim,    // The value to drive
-            {toValue: value,duration:2000}           // Configuration
+            {toValue: value,duration:200}           // Configuration
         ).start();                // Don't forget start!
-        this.isHidden = value;``
+        this.isHidden = value;
     }
 }
 

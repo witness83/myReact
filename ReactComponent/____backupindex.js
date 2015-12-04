@@ -1,118 +1,227 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 'use strict';
 
 var React = require('react-native');
+
+//var MineView = require('./mine.ios');
+//var TextSimple = require('./mine.ios');
+var MyView = require('./mine.ios');
+// var MineView = require('./subdir/subdir');
+// var TextSimple = require('./subdir/subdir');
+var ForNetWork = require('./fornetwork');
+
+var AwesomeProject = require('./example');
+
+var WithAnimation = require('./withAnimations');
+
+
 var {
-  AppRegistry,
-  Image,
-  ListView,
-  StyleSheet,
-  Text,
-  View,
+    Text,
+    View,
+    TouchableHighlight,
+    ListView,
+    AlertIOS,
+    Image,
+    NavigatorIOS,
+    Navigator
 } = React;
 
-var API_KEY = '7waqfqbprs7pajbz28mqf6vz';
-var API_URL = 'http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json';
-var PAGE_SIZE = 25;
-var PARAMS = '?apikey=' + API_KEY + '&page_limit=' + PAGE_SIZE;
-var REQUEST_URL = API_URL + PARAMS;
+var styles = React.StyleSheet.create({
+    container: {
+        flex: 1
+//        backgroundColor: 'gray'
+    },
+    wrapper: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+        marginTop: 80
+    },
+    welcome: {
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10
+    },
 
-var AwesomeProject = React.createClass({
-  getInitialState: function() {
-    return {
-      dataSource: new ListView.DataSource({
-        rowHasChanged: (row1, row2) => row1 !== row2,
-      }),
-      loaded: false,
-    };
-  },
+    testcenter:{
+        flexDirection:'column',height:40,top:20,
+        textAlign:'center',
+        backgroundColor:'#ff8800',
+        fontSize:16
+    },
 
-  componentDidMount: function() {
-    this.fetchData();
-  },
-
-  fetchData: function() {
-    fetch(REQUEST_URL)
-      .then((response) => response.json())
-      .then((responseData) => {
-        this.setState({
-          dataSource: this.state.dataSource.cloneWithRows(responseData.movies),
-          loaded: true,
-        });
-      })
-      .done();
-  },
-
-  render: function() {
-    if (!this.state.loaded) {
-      return this.renderLoadingView();
+    listStyles:{
+        flexDirection:'column',height:30,top:50,
+        backgroundColor:'yellow'
+    },
+    cellStyle:{
+        height:44
+    },
+    cellViewStyle:{
+        flexDirection:'row'
+    },
+    touch:{
+        backgroundColor: '#00ffff'
     }
-
-    return (
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={this.renderMovie}
-        style={styles.listView}
-      />
-    );
-  },
-
-  renderLoadingView: function() {
-    return (
-      <View style={styles.container}>
-        <Text>
-          Loading movies...
-        </Text>
-      </View>
-    );
-  },
-
-  renderMovie: function(movie) {
-    return (
-      <View style={styles.container}>
-        <Image
-          source={{uri: movie.posters.thumbnail}}
-          style={styles.thumbnail}
-        />
-        <View style={styles.rightContainer}>
-          <Text style={styles.title}>{movie.title}</Text>
-          <Text style={styles.year}>{movie.year}</Text>
-        </View>
-      </View>
-    );
-  },
+    
 });
 
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  rightContainer: {
-    flex: 1,
-  },
-  title: {
-    fontSize: 20,
-    marginBottom: 8,
-    textAlign: 'center',
-  },
-  year: {
-    textAlign: 'center',
-  },
-  thumbnail: {
-    width: 53,
-    height: 81,
-  },
-  listView: {
-    paddingTop: 20,
-    backgroundColor: '#F5FCFF',
-  },
+var simpleTest = React.StyleSheet.create({
+
 });
 
-React.AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+var  SimleView = React.createClass({
+    
+    getInitialState: function() {
+        var ds = new ListView.DataSource({rowHasChanged:(r1,r2) => r1!==r2});
+        var json = [
+            {'name':'row 1','title':'lala','uri':'http://imgsrc.baidu.com/forum/w%3D580/sign=7fc5b239b9a1cd1105b672288912c8b0/51b0f603738da977be0bd022b351f8198618e3b7.jpg'},
+            {'name':'row 2','title':'bb','uri':'http://img2.3lian.com/2014/f5/158/d/86.jpg'},
+            {'name':'this is new row','title':'cc','uri':'http://img2.3lian.com/2014/f5/158/d/87.jpg'}];
+        return {
+            dataSource : ds.cloneWithRows(json)
+        };
+    },
+    
+    render() {
+        console.log('render Simple View ... and .setRefView is :'+this.props.refMethod);
+
+        this.props.refMethod(this);
+        //        this.props.navigator.setRefView(this);
+        
+        
+        return(
+                <View style={styles.container}>
+                <ListView dataSource={this.state.dataSource} renderRow={this._renderRow} renderFooter={this._renderFooter}/>
+                </View>
+        );
+    },
+
+    _rightButtonClicked :function(){
+        console.log('this.props.navigator.push is '+navigator.push);
+        console.log('in simpleView rightClicked');
+        
+        this.props.navigator.push({
+            name: 'MineView ',
+            title: ',,,',
+            // component: ForNetWork
+            component:ForNetWork
+        });
+        
+    },
+    
+    _renderFooter:function(){
+        return (
+            <Text>this is a table footer</Text>
+        );
+    },
+    
+    _renderRow:function(rowData,sectionId,rowId){
+        var url = rowData.uri;
+        console.log('url is : '+url);
+        return (
+                <TouchableHighlight style={styles.touch} onPress={() => this._pressRow(rowData)} underlayColor='#ff8800'>
+                <View style={styles.cellViewStyle}>
+                <Text style={styles.cellStyle}>
+                {rowId},title:{rowData.name},{rowData.title}</Text>
+                <Image source= {{'uri':url}} style={{width: 40, height: 40}}/>
+                <Image source={require('./Images/icon-mine.png')} style={{width: 20, height: 20}}/>
+                </View>
+                </TouchableHighlight>
+               );
+    },
+
+    _pressRow:function(rowData){
+        var title = rowData.title;
+        console.log('row clicked ... '+title);
+        console.log('this.props.navigator is :'+this.props.navigator);
+        
+        this.props.navigator.push({
+            name:'MyView',
+            component:WithAnimation,
+            title: 'MyView title'
+        });
+        
+        // this.props.navigator.push();
+        
+        // return AlertIOS.alert(
+        //     rowData.title,
+        //     'lala');
+    }
+});
+
+
+var SimpleApp = React.createClass({
+    render:function(){
+        console.log('in simple with navi ...');
+        return(
+                <NavigatorIOS
+            style={styles.container}
+            ref="nav"
+            initialRoute={{
+                component: SimleView,
+                title: 'My NavigatorIOS test',
+                rightButtonTitle:'More',
+                onRightButtonPress:this._rightButtonClicked,
+                renderScene:this._renderScene,
+                configureScene:this._configureScene,
+                passProps: {
+                    refView:this.refView,
+                    refMethod:this.setRefView
+                }
+            }}
+                />
+        );
+    },
+
+    setRefView:function(refViewRef){
+        this.refView = refViewRef;
+    },
+
+    // refViewMethod:function(refViewRef){
+    //     this.refView = refViewRef;
+    // },
+
+    _configureScene:function(){
+        console.log('in configure scene');
+        
+        return Navigator.SceneConfigs.FloatFromRight;
+    },
+
+    _renderScene:function(route, navigator){
+        
+        // console.log('route is ;'+route+';navigator is :'+navigator);
+        
+        // if (route.component) {
+        //     return React.createElement(route.component, { navigator });
+        // };
+        // return nil;
+    },
+    
+    _rightButtonClicked :function(){
+        console.log('rightButtonClicked!!!');
+        console.log('this.props.navigator.push is '+this.refs.nav.push);
+        
+        // this.refs.nav.push({
+        //     name:'righ push',
+        //     title:'right push',
+        //     component:MyView,
+        //     passProps:{
+        //         lala:'pass prps is lala is this'
+        //     }
+        // });
+        
+        if(this.refView){
+            this.refView._rightButtonClicked();         
+        }
+
+        // navigator.push({
+        //     name: 'MineView ',
+        //     component: MineView
+        // });
+        
+    }
+    
+    
+});
+
+React.AppRegistry.registerComponent('SimpleApp', () => SimpleApp);
