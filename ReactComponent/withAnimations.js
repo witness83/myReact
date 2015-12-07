@@ -63,9 +63,9 @@ class WithAnimation extends React.Component{
 
     //需要this._onPress.bind(this)才能获取到refs
     _onPress (){
-        console.log('pressed ...');
-        
         var animatingView = this.fadeinView;
+        
+        console.log('pressed ...'+animatingView);
         console.log('animatingView state fadeAnim is :'+animatingView.state.fadeAnim);
         if(!animatingView){return;};
         animatingView._fading();

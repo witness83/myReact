@@ -2285,3 +2285,460 @@ React packager ready.
 [19:03:05] <START> request:/index.ios.bundle?platform=ios&dev=true
 [19:03:05] <END>   request:/index.ios.bundle?platform=ios&dev=true (8ms)
 ::1 - - [27/Nov/2015:11:03:05 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+ ┌────────────────────────────────────────────────────────────────────────────┐ 
+ │  Running packager on port 8081.                                            │ 
+ │                                                                            │ 
+ │  Keep this packager running while developing on any JS projects. Feel      │ 
+ │  free to close this tab and run your own packager instance if you          │ 
+ │  prefer.                                                                   │ 
+ │                                                                            │ 
+ │  https://github.com/facebook/react-native                                  │ 
+ │                                                                            │ 
+ └────────────────────────────────────────────────────────────────────────────┘ 
+Looking for JS files in
+   /Users/witness/workspace/example_rn/addOnsForRN/ReactComponent 
+
+[10:53:12] <START> Building Dependency Graph
+[10:53:12] <START> Crawling File System
+[10:53:12] <START> Loading bundles layout
+[10:53:12] <END>   Loading bundles layout (1ms)
+
+React packager ready.
+
+[10:53:13] <END>   Crawling File System (1387ms)
+[10:53:13] <START> Building in-memory fs for JavaScript
+[10:53:14] <END>   Building in-memory fs for JavaScript (319ms)
+[10:53:14] <START> Building in-memory fs for Assets
+[10:53:14] <END>   Building in-memory fs for Assets (290ms)
+[10:53:14] <START> Building Haste Map
+[10:53:14] <START> Building (deprecated) Asset Map
+[10:53:14] <END>   Building (deprecated) Asset Map (70ms)
+[10:53:15] <END>   Building Haste Map (993ms)
+[10:53:15] <END>   Building Dependency Graph (2999ms)
+[10:53:24] <START> request:/index.ios.bundle?platform=ios&dev=true
+[10:53:24] <START> find dependencies
+[10:53:25] <END>   find dependencies (300ms)
+[10:53:25] <START> transform
+[10:53:25] <END>   transform (300ms)
+[10:53:25] <END>   request:/index.ios.bundle?platform=ios&dev=true (617ms)
+::1 - - [07/Dec/2015:02:53:25 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[10:56:12] <START> find dependencies
+[10:56:13] <END>   find dependencies (134ms)
+[10:56:13] <START> transform
+[10:56:15] <START> find dependencies
+[10:56:15] <END>   find dependencies (115ms)
+[10:56:15] <START> transform
+[10:56:15] <END>   transform (427ms)
+[10:56:17] <START> request:/index.ios.bundle?platform=ios&dev=true
+[10:56:17] <END>   request:/index.ios.bundle?platform=ios&dev=true (12ms)
+::1 - - [07/Dec/2015:02:56:17 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[10:56:40] <START> request:/index.ios.bundle?platform=ios&dev=true
+[10:56:40] <END>   request:/index.ios.bundle?platform=ios&dev=true (10ms)
+::1 - - [07/Dec/2015:02:56:41 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[10:57:48] <START> find dependencies
+[10:57:48] <END>   find dependencies (108ms)
+[10:57:48] <START> transform
+[10:57:49] <END>   transform (305ms)
+[10:57:50] <START> request:/index.ios.bundle?platform=ios&dev=true
+[10:57:50] <END>   request:/index.ios.bundle?platform=ios&dev=true (21ms)
+::1 - - [07/Dec/2015:02:57:50 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[10:58:01] <START> find dependencies
+[10:58:01] <END>   find dependencies (89ms)
+[10:58:01] <START> transform
+[10:58:02] <END>   transform (300ms)
+[10:58:08] <START> find dependencies
+[10:58:08] <END>   find dependencies (89ms)
+[10:58:08] <START> transform
+[10:58:08] <END>   transform (125ms)
+[10:58:23] <START> find dependencies
+[10:58:23] <END>   find dependencies (92ms)
+[10:58:23] <START> transform
+[10:58:23] <END>   transform (143ms)
+[10:58:25] <START> find dependencies
+[10:58:25] <END>   find dependencies (81ms)
+[10:58:25] <START> transform
+[10:58:25] <END>   transform (151ms)
+[10:58:36] <START> find dependencies
+[10:58:36] <END>   find dependencies (89ms)
+[10:58:36] <START> transform
+[10:58:36] <END>   transform (199ms)
+[10:58:51] <START> find dependencies
+[10:58:51] <END>   find dependencies (115ms)
+[10:58:51] <START> transform
+[10:58:51] <END>   transform (152ms)
+[10:58:52] <START> find dependencies
+[10:58:52] <END>   find dependencies (92ms)
+[10:58:52] <START> transform
+[10:58:52] <END>   transform (107ms)
+[10:58:53] <START> find dependencies
+[10:58:53] <END>   find dependencies (89ms)
+[10:58:53] <START> transform
+[10:58:53] <END>   transform (122ms)
+[10:58:59] <START> request:/index.ios.bundle?platform=ios&dev=true
+[10:58:59] <END>   request:/index.ios.bundle?platform=ios&dev=true (21ms)
+::1 - - [07/Dec/2015:02:58:59 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[10:59:36] <START> find dependencies
+[10:59:36] <END>   find dependencies (101ms)
+[10:59:36] <START> transform
+[10:59:36] <END>   transform (127ms)
+[11:00:20] <START> find dependencies
+[11:00:20] <END>   find dependencies (101ms)
+[11:00:20] <START> transform
+[11:00:20] <END>   transform (132ms)
+[11:00:21] <START> find dependencies
+[11:00:21] <END>   find dependencies (87ms)
+[11:00:21] <START> transform
+[11:00:21] <END>   transform (113ms)
+[11:00:48] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:00:48] <END>   request:/index.ios.bundle?platform=ios&dev=true (15ms)
+::1 - - [07/Dec/2015:03:00:48 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:01:22] <START> find dependencies
+[11:01:22] <END>   find dependencies (106ms)
+[11:01:22] <START> transform
+[11:01:22] <END>   transform (118ms)
+[11:01:27] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:01:27] <END>   request:/index.ios.bundle?platform=ios&dev=true (10ms)
+::1 - - [07/Dec/2015:03:01:27 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:14:06] <START> find dependencies
+[11:14:06] <END>   find dependencies (96ms)
+[11:14:06] <START> transform
+[11:14:06] <END>   transform (77ms)
+[11:14:20] <START> find dependencies
+[11:14:20] <END>   find dependencies (91ms)
+[11:14:20] <START> transform
+[11:14:20] <END>   transform (68ms)
+[11:16:13] <START> find dependencies
+[11:16:13] <END>   find dependencies (73ms)
+[11:16:13] <START> transform
+[11:16:13] <END>   transform (83ms)
+[11:16:26] <START> find dependencies
+[11:16:26] <END>   find dependencies (104ms)
+[11:16:26] <START> transform
+[11:16:26] <END>   transform (60ms)
+[11:16:40] <START> find dependencies
+[11:16:40] <END>   find dependencies (69ms)
+[11:16:40] <START> transform
+[11:16:40] <END>   transform (46ms)
+[11:16:55] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:16:55] <END>   request:/index.ios.bundle?platform=ios&dev=true (17ms)
+::1 - - [07/Dec/2015:03:16:55 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:17:02] <START> request:/index.ios.map?platform=ios&dev=true
+[11:17:02] <END>   request:/index.ios.map?platform=ios&dev=true (89ms)
+[11:17:45] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:17:45] <END>   request:/index.ios.bundle?platform=ios&dev=true (12ms)
+::1 - - [07/Dec/2015:03:17:45 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:17:50] <START> request:/index.ios.map?platform=ios&dev=true
+[11:17:50] <END>   request:/index.ios.map?platform=ios&dev=true (86ms)
+[11:18:26] <START> find dependencies
+[11:18:26] <END>   find dependencies (103ms)
+[11:18:26] <START> transform
+[11:18:26] <END>   transform (78ms)
+[11:18:29] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:18:29] <END>   request:/index.ios.bundle?platform=ios&dev=true (18ms)
+::1 - - [07/Dec/2015:03:18:29 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:18:34] <START> request:/index.ios.map?platform=ios&dev=true
+[11:18:34] <END>   request:/index.ios.map?platform=ios&dev=true (86ms)
+[11:20:43] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:20:43] <END>   request:/index.ios.bundle?platform=ios&dev=true (8ms)
+::1 - - [07/Dec/2015:03:20:44 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:26:17] <START> find dependencies
+[11:26:17] <END>   find dependencies (91ms)
+[11:26:17] <START> transform
+[11:26:17] <END>   transform (79ms)
+[11:26:27] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:26:27] <END>   request:/index.ios.bundle?platform=ios&dev=true (10ms)
+::1 - - [07/Dec/2015:03:26:27 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:26:49] <START> find dependencies
+[11:26:49] <END>   find dependencies (100ms)
+[11:26:49] <START> transform
+[11:26:49] <END>   transform (80ms)
+[11:27:09] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:27:09] <END>   request:/index.ios.bundle?platform=ios&dev=true (12ms)
+::1 - - [07/Dec/2015:03:27:09 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:27:39] <START> find dependencies
+[11:27:39] <END>   find dependencies (82ms)
+[11:27:39] <START> transform
+[11:27:39] <END>   transform (69ms)
+[11:27:44] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:27:44] <END>   request:/index.ios.bundle?platform=ios&dev=true (11ms)
+::1 - - [07/Dec/2015:03:27:44 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:27:47] <START> request:/index.ios.map?platform=ios&dev=true
+[11:27:48] <END>   request:/index.ios.map?platform=ios&dev=true (66ms)
+[11:28:28] <START> find dependencies
+[11:28:28] <END>   find dependencies (94ms)
+[11:28:28] <START> transform
+[11:28:28] <END>   transform (74ms)
+[11:28:31] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:28:31] <END>   request:/index.ios.bundle?platform=ios&dev=true (11ms)
+::1 - - [07/Dec/2015:03:28:31 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:28:36] <START> request:/index.ios.map?platform=ios&dev=true
+[11:28:36] <END>   request:/index.ios.map?platform=ios&dev=true (58ms)
+[11:28:54] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:28:54] <END>   request:/index.ios.bundle?platform=ios&dev=true (19ms)
+::1 - - [07/Dec/2015:03:28:54 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:28:57] <START> request:/index.ios.map?platform=ios&dev=true
+[11:28:57] <END>   request:/index.ios.map?platform=ios&dev=true (83ms)
+[11:29:10] <START> find dependencies
+[11:29:10] <END>   find dependencies (89ms)
+[11:29:10] <START> transform
+[11:29:10] <END>   transform (85ms)
+[11:29:15] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:29:15] <END>   request:/index.ios.bundle?platform=ios&dev=true (14ms)
+::1 - - [07/Dec/2015:03:29:15 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:29:22] <START> request:/index.ios.map?platform=ios&dev=true
+[11:29:22] <END>   request:/index.ios.map?platform=ios&dev=true (77ms)
+[11:29:34] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:29:34] <END>   request:/index.ios.bundle?platform=ios&dev=true (17ms)
+::1 - - [07/Dec/2015:03:29:34 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:29:58] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:29:58] <END>   request:/index.ios.bundle?platform=ios&dev=true (17ms)
+::1 - - [07/Dec/2015:03:29:59 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:30:01] <START> request:/index.ios.map?platform=ios&dev=true
+[11:30:01] <END>   request:/index.ios.map?platform=ios&dev=true (87ms)
+[11:30:17] <START> find dependencies
+[11:30:17] <END>   find dependencies (103ms)
+[11:30:17] <START> transform
+[11:30:17] <END>   transform (57ms)
+[11:31:43] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:31:43] <END>   request:/index.ios.bundle?platform=ios&dev=true (16ms)
+::1 - - [07/Dec/2015:03:31:43 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:31:46] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:31:46] <END>   request:/index.ios.bundle?platform=ios&dev=true (16ms)
+::1 - - [07/Dec/2015:03:31:46 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:31:50] <START> request:/index.ios.map?platform=ios&dev=true
+[11:31:50] <END>   request:/index.ios.map?platform=ios&dev=true (81ms)
+[11:33:20] <START> find dependencies
+[11:33:20] <END>   find dependencies (99ms)
+[11:33:20] <START> transform
+[11:33:20] <END>   transform (71ms)
+[11:33:23] <START> find dependencies
+[11:33:23] <END>   find dependencies (70ms)
+[11:33:23] <START> transform
+[11:33:23] <END>   transform (62ms)
+[11:33:29] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:33:29] <END>   request:/index.ios.bundle?platform=ios&dev=true (11ms)
+::1 - - [07/Dec/2015:03:33:30 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:33:39] <START> request:/index.ios.map?platform=ios&dev=true
+[11:33:39] <END>   request:/index.ios.map?platform=ios&dev=true (85ms)
+[11:33:58] <START> find dependencies
+[11:33:58] <END>   find dependencies (85ms)
+[11:33:58] <START> transform
+[11:33:58] <END>   transform (72ms)
+[11:34:05] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:34:05] <END>   request:/index.ios.bundle?platform=ios&dev=true (14ms)
+::1 - - [07/Dec/2015:03:34:05 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:34:08] <START> request:/index.ios.map?platform=ios&dev=true
+[11:34:08] <END>   request:/index.ios.map?platform=ios&dev=true (84ms)
+[11:36:47] <START> find dependencies
+[11:36:47] <END>   find dependencies (80ms)
+[11:36:47] <START> transform
+[11:36:47] <END>   transform (101ms)
+[11:36:52] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:36:52] <END>   request:/index.ios.bundle?platform=ios&dev=true (17ms)
+::1 - - [07/Dec/2015:03:36:53 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:36:55] <START> request:/index.ios.map?platform=ios&dev=true
+[11:36:55] <END>   request:/index.ios.map?platform=ios&dev=true (74ms)
+[11:37:03] <START> find dependencies
+[11:37:03] <END>   find dependencies (94ms)
+[11:37:03] <START> transform
+[11:37:03] <END>   transform (72ms)
+[11:37:16] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:37:16] <END>   request:/index.ios.bundle?platform=ios&dev=true (12ms)
+::1 - - [07/Dec/2015:03:37:16 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:37:43] <START> find dependencies
+[11:37:43] <END>   find dependencies (71ms)
+[11:37:43] <START> transform
+[11:37:43] <END>   transform (92ms)
+[11:37:51] <START> find dependencies
+[11:37:51] <END>   find dependencies (89ms)
+[11:37:51] <START> transform
+[11:37:51] <END>   transform (78ms)
+[11:37:54] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:37:54] <END>   request:/index.ios.bundle?platform=ios&dev=true (11ms)
+::1 - - [07/Dec/2015:03:37:54 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:37:57] <START> request:/index.ios.map?platform=ios&dev=true
+[11:37:57] <END>   request:/index.ios.map?platform=ios&dev=true (61ms)
+[11:38:25] <START> find dependencies
+[11:38:26] <END>   find dependencies (86ms)
+[11:38:26] <START> transform
+[11:38:26] <END>   transform (63ms)
+[11:38:30] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:38:30] <END>   request:/index.ios.bundle?platform=ios&dev=true (13ms)
+::1 - - [07/Dec/2015:03:38:30 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:39:18] <START> request:/index.ios.map?platform=ios&dev=true
+[11:39:18] <END>   request:/index.ios.map?platform=ios&dev=true (81ms)
+[11:39:32] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:39:32] <END>   request:/index.ios.bundle?platform=ios&dev=true (19ms)
+::1 - - [07/Dec/2015:03:39:33 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:40:14] <START> find dependencies
+[11:40:14] <END>   find dependencies (110ms)
+[11:40:14] <START> transform
+[11:40:14] <END>   transform (78ms)
+[11:40:18] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:40:18] <END>   request:/index.ios.bundle?platform=ios&dev=true (13ms)
+::1 - - [07/Dec/2015:03:40:18 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:40:22] <START> request:/index.ios.map?platform=ios&dev=true
+[11:40:22] <END>   request:/index.ios.map?platform=ios&dev=true (59ms)
+[11:40:36] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:40:36] <END>   request:/index.ios.bundle?platform=ios&dev=true (13ms)
+::1 - - [07/Dec/2015:03:40:36 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:40:38] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:40:38] <END>   request:/index.ios.bundle?platform=ios&dev=true (13ms)
+Launching Dev Tools...
+[11:40:52] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:40:52] <END>   request:/index.ios.bundle?platform=ios&dev=true (17ms)
+[11:40:52] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:40:52] <END>   request:/index.ios.bundle?platform=ios&dev=true (15ms)
+::1 - - [07/Dec/2015:03:40:52 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:40:58] <START> request:/index.ios.map?platform=ios&dev=true
+[11:40:58] <END>   request:/index.ios.map?platform=ios&dev=true (103ms)
+[11:41:04] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:41:04] <END>   request:/index.ios.bundle?platform=ios&dev=true (16ms)
+[11:41:04] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:41:04] <END>   request:/index.ios.bundle?platform=ios&dev=true (10ms)
+[11:41:04] <START> request:/index.ios.map?platform=ios&dev=true
+[11:41:04] <END>   request:/index.ios.map?platform=ios&dev=true (87ms)
+::1 - - [07/Dec/2015:03:41:05 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:49:24] <START> find dependencies
+[11:49:24] <END>   find dependencies (115ms)
+[11:49:24] <START> transform
+[11:49:24] <END>   transform (63ms)
+[11:49:58] <START> find dependencies
+[11:49:58] <END>   find dependencies (98ms)
+[11:49:58] <START> transform
+[11:49:58] <END>   transform (62ms)
+[11:50:02] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:50:02] <END>   request:/index.ios.bundle?platform=ios&dev=true (11ms)
+[11:50:02] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:50:02] <END>   request:/index.ios.bundle?platform=ios&dev=true (34ms)
+[11:50:02] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:50:02] <END>   request:/index.ios.bundle?platform=ios&dev=true (10ms)
+[11:50:02] <START> request:/index.ios.map?platform=ios&dev=true
+[11:50:03] <END>   request:/index.ios.map?platform=ios&dev=true (61ms)
+::1 - - [07/Dec/2015:03:50:03 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:50:55] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:50:55] <END>   request:/index.ios.bundle?platform=ios&dev=true (12ms)
+::1 - - [07/Dec/2015:03:50:55 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:53:04] <START> find dependencies
+[11:53:04] <END>   find dependencies (110ms)
+[11:53:04] <START> transform
+[11:53:04] <END>   transform (82ms)
+[11:53:12] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:53:12] <END>   request:/index.ios.bundle?platform=ios&dev=true (9ms)
+::1 - - [07/Dec/2015:03:53:12 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:55:05] <START> find dependencies
+[11:55:05] <END>   find dependencies (102ms)
+[11:55:05] <START> transform
+[11:55:05] <END>   transform (73ms)
+[11:55:05] <START> find dependencies
+[11:55:05] <END>   find dependencies (95ms)
+[11:55:05] <START> transform
+[11:55:05] <END>   transform (69ms)
+[11:55:26] <START> find dependencies
+[11:55:26] <END>   find dependencies (92ms)
+[11:55:26] <START> transform
+[11:55:26] <END>   transform (79ms)
+[11:55:30] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:55:30] <END>   request:/index.ios.bundle?platform=ios&dev=true (10ms)
+::1 - - [07/Dec/2015:03:55:30 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:56:27] <START> find dependencies
+[11:56:27] <END>   find dependencies (82ms)
+[11:56:27] <START> transform
+[11:56:32] <START> find dependencies
+[11:56:32] <END>   find dependencies (78ms)
+[11:56:32] <START> transform
+[11:56:32] <END>   transform (59ms)
+[11:56:35] <START> find dependencies
+[11:56:35] <END>   find dependencies (83ms)
+[11:56:35] <START> transform
+[11:56:35] <END>   transform (71ms)
+[11:56:38] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:56:38] <END>   request:/index.ios.bundle?platform=ios&dev=true (14ms)
+::1 - - [07/Dec/2015:03:56:38 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:57:05] <START> find dependencies
+[11:57:06] <END>   find dependencies (91ms)
+[11:57:06] <START> transform
+[11:57:06] <END>   transform (84ms)
+[11:57:08] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:57:08] <END>   request:/index.ios.bundle?platform=ios&dev=true (11ms)
+::1 - - [07/Dec/2015:03:57:08 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:58:28] <START> find dependencies
+[11:58:28] <END>   find dependencies (69ms)
+[11:58:28] <START> transform
+[11:58:28] <END>   transform (91ms)
+[11:58:38] <START> find dependencies
+[11:58:38] <END>   find dependencies (95ms)
+[11:58:38] <START> transform
+[11:58:39] <END>   transform (73ms)
+[11:58:46] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:58:46] <END>   request:/index.ios.bundle?platform=ios&dev=true (11ms)
+::1 - - [07/Dec/2015:03:58:46 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:59:10] <START> find dependencies
+[11:59:10] <END>   find dependencies (84ms)
+[11:59:10] <START> transform
+[11:59:10] <END>   transform (96ms)
+[11:59:11] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:59:11] <END>   request:/index.ios.bundle?platform=ios&dev=true (18ms)
+::1 - - [07/Dec/2015:03:59:11 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:59:43] <START> find dependencies
+[11:59:43] <END>   find dependencies (58ms)
+[11:59:43] <START> transform
+[11:59:43] <END>   transform (87ms)
+[11:59:45] <START> request:/index.ios.bundle?platform=ios&dev=true
+[11:59:45] <END>   request:/index.ios.bundle?platform=ios&dev=true (16ms)
+::1 - - [07/Dec/2015:03:59:45 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[11:59:47] <START> request:/index.ios.map?platform=ios&dev=true
+[11:59:47] <END>   request:/index.ios.map?platform=ios&dev=true (79ms)
+[11:59:53] <START> find dependencies
+[11:59:53] <END>   find dependencies (64ms)
+[11:59:53] <START> transform
+[11:59:53] <END>   transform (65ms)
+[12:00:54] <START> find dependencies
+[12:00:54] <END>   find dependencies (108ms)
+[12:00:54] <START> transform
+[12:00:54] <END>   transform (78ms)
+[12:00:57] <START> request:/index.ios.bundle?platform=ios&dev=true
+[12:00:57] <END>   request:/index.ios.bundle?platform=ios&dev=true (16ms)
+::1 - - [07/Dec/2015:04:00:57 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[12:01:09] <START> find dependencies
+[12:01:09] <END>   find dependencies (83ms)
+[12:01:09] <START> transform
+[12:01:09] <END>   transform (68ms)
+[12:01:14] <START> find dependencies
+[12:01:14] <END>   find dependencies (86ms)
+[12:01:14] <START> transform
+[12:01:14] <END>   transform (85ms)
+[12:01:15] <START> request:/index.ios.bundle?platform=ios&dev=true
+[12:01:15] <END>   request:/index.ios.bundle?platform=ios&dev=true (16ms)
+::1 - - [07/Dec/2015:04:01:15 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[12:02:12] <START> find dependencies
+[12:02:12] <END>   find dependencies (91ms)
+[12:02:12] <START> transform
+[12:02:12] <START> request:/index.ios.bundle?platform=ios&dev=true
+[12:02:13] <END>   transform (102ms)
+[12:02:13] <END>   request:/index.ios.bundle?platform=ios&dev=true (52ms)
+::1 - - [07/Dec/2015:04:02:13 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[12:02:53] <START> find dependencies
+[12:02:53] <END>   find dependencies (100ms)
+[12:02:53] <START> transform
+[12:02:53] <END>   transform (81ms)
+[12:03:01] <START> find dependencies
+[12:03:01] <END>   find dependencies (87ms)
+[12:03:01] <START> transform
+[12:03:01] <END>   transform (82ms)
+[12:03:02] <START> find dependencies
+[12:03:02] <END>   find dependencies (106ms)
+[12:03:02] <START> transform
+[12:03:02] <END>   transform (75ms)
+[12:03:03] <START> request:/index.ios.bundle?platform=ios&dev=true
+[12:03:03] <END>   request:/index.ios.bundle?platform=ios&dev=true (12ms)
+::1 - - [07/Dec/2015:04:03:04 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[12:08:56] <START> request:/index.ios.bundle?platform=ios&dev=true
+[12:08:56] <END>   request:/index.ios.bundle?platform=ios&dev=true (11ms)
+::1 - - [07/Dec/2015:04:08:56 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[12:09:20] <START> request:/index.ios.bundle?platform=ios&dev=true
+[12:09:20] <END>   request:/index.ios.bundle?platform=ios&dev=true (13ms)
+::1 - - [07/Dec/2015:04:09:20 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
+[12:10:53] <START> request:/index.ios.bundle?platform=ios&dev=true
+[12:10:53] <END>   request:/index.ios.bundle?platform=ios&dev=true (10ms)
+::1 - - [07/Dec/2015:04:10:53 +0000] "GET /flow/ HTTP/1.1" 404 18 "-" "testRN/1 CFNetwork/758.1.6 Darwin/15.0.0"
