@@ -4,6 +4,7 @@ var React = require('react-native');
 
 var NativeModule = require('react-native').NativeModules.NativeModule;
 
+var ForNativeUI = require('./forNativeUI.js');
 
 var {
     Text,
@@ -21,30 +22,31 @@ var styles = React.StyleSheet.create({
 
 var ForNativeModule = React.createClass({
 
-    
+
     getInitialState:function(){
         return {
             value :''
         };
     },
-    
+
     render:function(){
         console.log('in simple with text view  ...');
         return(
                 <View style={styles.container}>
                 <Text onPress= {this._pressed}>init React Views only send value</Text>
                 <Text onPress= {this._pressed2}>init React Views send value and callback {this.state.value}</Text>
-                <Text onPress= {this._pressed3}>third line  {this.state.value}</Text>         
+                <Text onPress= {this._pressed3}>third line  {this.state.value}</Text>
+                <Text onPress= {this._pressed4} style={{color:'ff8800'}}>jump to Native View</Text>
                 </View>
         );
     },
 
-    
+
     _pressed:function(){
         console.log('NativeModule is :'+NativeModule);
         var value = NativeModule.nativeParam('abc');
-        
-        console.log('value is '+value);        
+
+        console.log('value is '+value);
     },
 
     _pressed2:function(){
@@ -69,6 +71,15 @@ var ForNativeModule = React.createClass({
         });
     },
 
+    _pressed4:function(){
+        console.log('pressed 4 ...');
+        this.props.navigator.push({
+            name: 'fornativeui',
+            title: 'forNativeUI',
+            component:ForNativeUI
+        });
+    },
+
     componentWillUpdate:function(){
         console.log('in componentWillUpdate');
 
@@ -78,7 +89,7 @@ var ForNativeModule = React.createClass({
 
     }
 
-    
+
 });
 
 

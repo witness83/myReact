@@ -1,11 +1,14 @@
 //
-// Created by witness on 15/11/26.
+// Created by witness on 15/12/7.
 // Copyright (c) 2015 witness. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "React/RCTRootView.h"
 
-@interface ReactView : UIView
+
+@interface NativeView : UIView
+
+
+
 @end

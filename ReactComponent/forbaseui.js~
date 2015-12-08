@@ -1,0 +1,6 @@
+var {
+    requireNativeUI
+} = require('react-native');
+
+
+module.exports = requireNativeUI('MyReactNativeView',null);

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ReactView.h"
+#import "RCTRootView.h"
 
 @interface ViewController ()
 @end

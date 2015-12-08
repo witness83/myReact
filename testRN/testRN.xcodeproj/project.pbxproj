@@ -14,7 +14,9 @@
 		3D0928BE1C0700AD00AA8A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0928BD1C0700AD00AA8A3A /* Assets.xcassets */; };
 		3D0928C11C0700AD00AA8A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0928BF1C0700AD00AA8A3A /* LaunchScreen.storyboard */; };
 		3DE132831C1532830018AED8 /* NativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE132811C1532830018AED8 /* NativeModule.m */; };
-		50C899B1C341DC05C34883ED /* ReactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C895C1F364996EA5C44330 /* ReactView.m */; };
+		50C89071CCDFE46791174766 /* MyReactNativeViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C89B6C2C1C29DBA08BB4FA /* MyReactNativeViewManager.m */; };
+		50C890B7755EFE61602D17F9 /* NativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C89BB19970ABCD5716118C /* NativeView.m */; };
+		50C899B1C341DC05C34883ED /* MyReactNativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C895C1F364996EA5C44330 /* MyReactNativeView.m */; };
 		98F7FA9975BA06D6A53D0B5B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6FB176661AA054826DCC54 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +36,12 @@
 		3DE132811C1532830018AED8 /* NativeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeModule.m; sourceTree = "<group>"; };
 		3DE132821C1532830018AED8 /* NativeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeModule.h; sourceTree = "<group>"; };
 		42DDDF2CEEAE6DEC22E9C95A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		50C890D5DD99D6316195EC49 /* ReactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactView.h; sourceTree = "<group>"; };
-		50C895C1F364996EA5C44330 /* ReactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactView.m; sourceTree = "<group>"; };
+		50C890D5DD99D6316195EC49 /* MyReactNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyReactNativeView.h; sourceTree = "<group>"; };
+		50C891748220397AF6473CFA /* NativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeView.h; sourceTree = "<group>"; };
+		50C895C1F364996EA5C44330 /* MyReactNativeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyReactNativeView.m; sourceTree = "<group>"; };
+		50C89B118BA186835CE92B9D /* MyReactNativeViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyReactNativeViewManager.h; sourceTree = "<group>"; };
+		50C89B6C2C1C29DBA08BB4FA /* MyReactNativeViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyReactNativeViewManager.m; sourceTree = "<group>"; };
+		50C89BB19970ABCD5716118C /* NativeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +97,12 @@
 				3D0928BF1C0700AD00AA8A3A /* LaunchScreen.storyboard */,
 				3D0928C21C0700AD00AA8A3A /* Info.plist */,
 				3D0928B11C0700AD00AA8A3A /* Supporting Files */,
-				50C895C1F364996EA5C44330 /* ReactView.m */,
-				50C890D5DD99D6316195EC49 /* ReactView.h */,
+				50C895C1F364996EA5C44330 /* MyReactNativeView.m */,
+				50C890D5DD99D6316195EC49 /* MyReactNativeView.h */,
+				50C89BB19970ABCD5716118C /* NativeView.m */,
+				50C891748220397AF6473CFA /* NativeView.h */,
+				50C89B6C2C1C29DBA08BB4FA /* MyReactNativeViewManager.m */,
+				50C89B118BA186835CE92B9D /* MyReactNativeViewManager.h */,
 			);
 			path = testRN;
 			sourceTree = "<group>";
@@ -239,7 +249,9 @@
 				3D0928B61C0700AD00AA8A3A /* AppDelegate.m in Sources */,
 				3D0928B31C0700AD00AA8A3A /* main.m in Sources */,
 				3DE132831C1532830018AED8 /* NativeModule.m in Sources */,
-				50C899B1C341DC05C34883ED /* ReactView.m in Sources */,
+				50C899B1C341DC05C34883ED /* MyReactNativeView.m in Sources */,
+				50C890B7755EFE61602D17F9 /* NativeView.m in Sources */,
+				50C89071CCDFE46791174766 /* MyReactNativeViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
