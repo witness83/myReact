@@ -27,12 +27,18 @@ var ForNativeUI = React.createClass({
     render:function(){
         console.log('in simple with text view  ...');
         return(
-                <MyNvView onChange={(event)=>{console.log('event is '+event);}} ref='mynavi' nativeValue={'jaaajjjj'} style={{marginTop:100,height:250,width:200,backgroundColor:'red'}}></MyNvView>  
+                <MyNvView onNativeChange={this._onNativeUIChanged} ref='mynavi' nativeValue={'jaaajjjj'} style={{marginTop:100,height:250,width:200,backgroundColor:'red'}}></MyNvView>  
                 // <View style={styles.container}>
                 // <Text  onPress= {this._onPress}>init React Views</Text>
 
                 // </View>
         );
+    },
+
+
+    
+    _onNativeUIChanged:function(event){
+       console.log('in RN event is ... '+event.nativeEvent.events);
     },
 
  

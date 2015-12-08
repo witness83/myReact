@@ -10,7 +10,7 @@ class MyNvView extends React.Component{
 
     _onChange(event:Event){
         console.log('event in mynvview is '+event);
-        this.onNativeChange(event);
+        this.props.onNativeChange(event);
     };
 
     render() {

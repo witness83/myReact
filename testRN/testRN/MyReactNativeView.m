@@ -52,9 +52,9 @@
 //	self.backgroundColor = [UIColor yell]
 	[self addSubview:self.textLabel];
 	__weak MyReactNativeView * __weakSelf = self;
-//	NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:__weakSelf selector:@selector(startSendEvent) userInfo:nil repeats:YES];
-//
-//	[timer fire];
+	NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:__weakSelf selector:@selector(startSendEvent) userInfo:nil repeats:YES];
+
+	[timer fire];
 }
 
 
@@ -80,8 +80,9 @@
 //		return;
 //	}
 
+	if(!self.reactTag) return;
 	NSDictionary *event = @{
-//			@"target" : self.reactTag,
+			@"target" : self.reactTag,
 			@"events" : @"valuechanged",
 	};
 
