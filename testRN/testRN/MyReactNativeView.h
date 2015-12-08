@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "RCTView.h"
 
 @class MyReactNativeViewManager;
 @class MyReactNativeView;
@@ -17,7 +18,6 @@
 @interface MyReactNativeView : UIView
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher;
-@property (nonatomic, weak) id<MyReactNativeViewDelegate>delegate;
 
 - (void)setPassValue:(id)json;
 @end

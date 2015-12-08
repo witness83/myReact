@@ -51,7 +51,8 @@
 
 //	self.backgroundColor = [UIColor yell]
 	[self addSubview:self.textLabel];
-//	NSTimer *timer = [[NSTimer alloc] initWithFireDate:[NSDate date] interval:1 target:self selector:@selector(startSendEvent) userInfo:nil repeats:YES];
+	__weak MyReactNativeView * __weakSelf = self;
+//	NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:__weakSelf selector:@selector(startSendEvent) userInfo:nil repeats:YES];
 //
 //	[timer fire];
 }
@@ -66,31 +67,33 @@
 	}else{
 		[self.textLabel setText:json];
 		[self setNeedsLayout];
-		if(self.delegate ){
-			[self.delegate startSendEvent:self];
-		}
 	}
 
 }
 
-//- (void) startSendEvent{
-//	NSLog(@"in startSendEvent....");
+- (void) startSendEvent{
+	NSLog(@"in startSendEvent....");
+
+
 //	if(!self.textLabel.text||self.textLabel.text.length==0){
 //		NSLog(@"text is empty!!!!! ");
 //		return;
 //	}
-//
-//
-//	NSDictionary *event = @{
-//			@"target" : @2,//self.reactTag,
-//			@"events" : @"valuechanged",
-//	};
-//
-////	[self.bridge.eventDispatcher sendInputEventWithName:@"topChange" body:event];
-//	[_eventDispatcher sendInputEventWithName:@"topChange" body:@{@"target": self.reactTag}];
-//
-//
+
+	NSDictionary *event = @{
+//			@"target" : self.reactTag,
+			@"events" : @"valuechanged",
+	};
+
+//	[self.bridge.eventDispatcher sendInputEventWithName:@"topChange" body:event];
+	[_eventDispatcher sendInputEventWithName:@"topChange" body:event];
+
+
 //	NSLog(@"send message ...%@",event);
-//}
+}
+
+
+- (void)dealloc {
+}
 
 @end

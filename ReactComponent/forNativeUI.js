@@ -27,23 +27,24 @@ var ForNativeUI = React.createClass({
     render:function(){
         console.log('in simple with text view  ...');
         return(
-                <View style={styles.container}>
-                <Text  onPress= {this._onPress}>init React Views</Text>
-                <MyNvView ref='mynavi' nativeValue={'jaaajjjj'} style={{height:50,width:200,backgroundColor:'red'}}></MyNvView>  
-                </View>
+                <MyNvView onChange={(event)=>{console.log('event is '+event);}} ref='mynavi' nativeValue={'jaaajjjj'} style={{marginTop:100,height:250,width:200,backgroundColor:'red'}}></MyNvView>  
+                // <View style={styles.container}>
+                // <Text  onPress= {this._onPress}>init React Views</Text>
+
+                // </View>
         );
     },
 
  
     _onPress:function(){
         //        this.refs.mynavi.nativeValue= 'bbb';
-//        console.log('out put:'+this.refs.mynavi.nativeValue);
+        console.log('out put:'+this.refs.mynavi.nativeValue);
         var value = MyReactNativeViewManager.nativeMethod('abc');
     },
     
-    onRegionChange:function(event){
-        console.log('event is '+event);
-    },
+    // onRegionChange:function(event){
+    //     console.log('event is '+event);
+    // },
 
     componentWillUpdate:function(){
         console.log('this.props is '+this.refs.mynavi);

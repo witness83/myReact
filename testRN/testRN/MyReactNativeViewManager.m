@@ -36,6 +36,7 @@ RCT_EXPORT_METHOD(nativeMethod:(NSString *)methodname){
 
 - (UIView *) view{
 	MyReactNativeView *localView = [[MyReactNativeView alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
+	localView.reactTag = @1;
 	return localView;
 }
 

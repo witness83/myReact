@@ -33,7 +33,7 @@ var ForNativeModule = React.createClass({
         console.log('in simple with text view  ...');
         return(
                 <View style={styles.container}>
-                <Text onPress= {this._pressed}>init React Views only send value</Text>
+                <Text ref='aa' onPress= {this._pressed}>init React Views only send value</Text>
                 <Text onPress= {this._pressed2}>init React Views send value and callback {this.state.value}</Text>
                 <Text onPress= {this._pressed3}>third line  {this.state.value}</Text>
                 <Text onPress= {this._pressed4} style={{color:'ff8800'}}>jump to Native View</Text>
